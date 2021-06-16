@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Device">
+  <title>Smart Device</title>
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page-body">
+  <section class="modal modal__show">
+    <div class="modal__wrapper">
+      <div class="modal__box">
+        <button class="modal__close" type="button" name="close"></button>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label for="modal-name">
+            <input id="modal-name" type="text" name="Name" placeholder="Имя" title="только буквы"
+              pattern="^[a-zA-Z-А-Яа-яЁё\s]+$" required>
+          </label>
+          <label for="modal-tel">
+            <input id="modal-tel" type="tel" name="Phone" placeholder="Телефон" title="только цифры" pattern="^[0-9]+$"
+              required>
+          </label>
+          <label for="modal-text">
+            <textarea id="modal-text" name="Message" placeholder="Ваш вопрос"></textarea>
+          </label>
+          <button class="modal__button" type="submit">Отправить</button>
+          <p class="modal__agree">
+            <input id="modal-check" type="checkbox" title="нужно согласиться" checked required>
+            <label for="modal-check">
+              Я согласен на обработку персональных данных
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

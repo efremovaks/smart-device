@@ -1,0 +1,155 @@
+.main-nav {
+  max-width: 100%;
+  width: 1424px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 738px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 100%;
+  }
+}
+
+.main-nav__logo {
+  padding-left: 13px;
+  margin-right: auto;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-left: 10px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.main-nav__logo-desk {
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+
+.main-nav__logo-mobile {
+  display: none;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: block;
+  }
+}
+
+.main-nav-items {
+  list-style: none;
+  margin: 0;
+  padding-top: 13px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 430px;
+
+  @media (max-width: $tablet-breakpoint) {
+    min-width: 83px;
+    padding-right: 8px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 5px;
+    padding-right: 15px;
+    min-width: 72px;
+  }
+}
+
+.main-nav-items li {
+  margin-right: 50px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: 33px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 23px;
+  }
+
+  &:first-child {
+    margin-top: 4px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav-items a {
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white-text-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.main-nav-items img {
+  display: inline;
+  width: auto;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 25px;
+  }
+}
+
+.main-nav-items span {
+  padding-left: 10px;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.main-nav__call {
+  display: block;
+  font-family: $main-header-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white-text-color;
+  width: 180px;
+  height: 45px;
+  padding-top: 14px;
+  padding-left: 0;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-left: 50px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}

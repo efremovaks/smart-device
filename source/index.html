@@ -1,13 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Smart Device">
+  <title>Smart Device</title>
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+          <svg class="main-nav__logo-desk" width="202" height="52">
+            <use xlink:href="img/sprite.svg#logo" />
+          </svg>
+          <svg class="main-nav__logo-mobile" width="38" height="38">
+            <use xlink:href="img/sprite.svg#logo-min" />
+          </svg>
+        </a>
+        <ul class="main-nav-items">
+          <li>
+            <a href="mailto:info@sd.ru">
+              <img src="img/mail-d.png" alt="mail" width="19" height="14">
+              <span>info@sd.ru</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+74950005252">
+              <img src="img/phone-d.png" alt="phone" width="18" height="18">
+              <span>+7 (495) 000 52 52</span>
+            </a>
+          </li>
+        </ul>
+        <a class="main-nav__call" href='popup.html'>Заказать звонок</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h1>Печатные платы</h1>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="promo__button" href="#">
+          <span class="promo__button-desk">Получить бесплатную консультацию</span>
+          <span class="promo__button-mobile">Бесплатная консультация</span>
+        </a>
+        <a class="promo__down" href="#"><span>Скролл вниз</span></a>
+      </div>
+    </section>
+
+  </main>
+  <footer class="page-footer">
+    <section class="main-footer">
+      <div class="main-footer__social">
+        <img src="img/logo-footer.png" alt="Service Device - умные технологии" width="216" height="52">
+        <ul>
+          <li>
+            <a href="fb.com">
+              <img src="img/fb.png" alt="fb" width="27" height="27">
+            </a>
+          </li>
+          <li>
+            <a href="ok.ru">
+              <img src="img/ok.png" alt="ok" width="26" height="26">
+            </a>
+          </li>
+          <li>
+            <a href="vk.ru">
+              <img src="img/vk.png" alt="vk" width="27" height="26">
+            </a>
+          </li>
+        </ul>
+        <p>1999-2018 SD Service Devices</p>
+      </div>
+      <div id="accordeon">
+        <div class="main-footer__sections">
+          <h3>Разделы сайта</h3>
+          <ul>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Продукты</a>
+            </li>
+            <li>
+              <a href="#">Производство печатных плат</a>
+            </li>
+            <li>
+              <a href="#">Монтаж печатных плат</a>
+            </li>
+            <li>
+              <a href="#">Комплектующие</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__contacts">
+          <h3>Наш офис</h3>
+          <ul>
+            <li><a href="https://yandex.ru/maps/-/CCUeAGE6SD" target="_blank">г. Мытищи, Олимпийский проспект, д.10</a>
+            </li>
+            <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+            <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+            <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <a href="#">Все права защищены</a>
+        <a href="#">Условия конфиденциальности</a>
+        <a href="#">Developed by wow studio </a>
+      </div>
+    </section>
+  </footer>
+
+  <section class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__box">
+        <button class="modal__close" type="button" name="close"></button>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label for="modal-name">
+            <input id="modal-name" type="text" name="Name" placeholder="Имя" title="только буквы"
+              pattern="^[a-zA-Z-А-Яа-яЁё\s]+$" required>
+          </label>
+          <label for="modal-tel">
+            <input id="modal-tel" type="tel" name="Phone" placeholder="Телефон" title="только цифры" pattern="^[0-9]+$"
+              required>
+          </label>
+          <label for="modal-text">
+            <textarea id="modal-text" name="Message" placeholder="Ваш вопрос"></textarea>
+          </label>
+          <button class="modal__button" type="submit">Отправить</button>
+          <p class="modal__agree">
+            <input id="modal-check" type="checkbox" title="нужно согласиться" checked required>
+            <label for="modal-check">
+              Я согласен на обработку персональных данных
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
