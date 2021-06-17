@@ -59,7 +59,7 @@
     <section class="main-footer">
       <div class="main-footer__social">
         <img src="img/logo-footer.png" alt="Service Device - умные технологии" width="216" height="52">
-        <ul>
+        <ul class="main-footer__social-items">
           <li>
             <a href="fb.com">
               <img src="img/fb.png" alt="fb" width="27" height="27">
@@ -71,55 +71,69 @@
             </a>
           </li>
           <li>
-            <a href="vk.ru">
+            <a href="vk.com">
               <img src="img/vk.png" alt="vk" width="27" height="26">
             </a>
           </li>
         </ul>
-        <p>1999-2018 SD Service Devices</p>
       </div>
-      <div id="accordeon">
-        <div class="main-footer__sections">
-          <h3>Разделы сайта</h3>
-          <ul>
-            <li>
-              <a href="#">О компании</a>
-            </li>
-            <li>
-              <a href="#">Продукты</a>
-            </li>
-            <li>
-              <a href="#">Производство печатных плат</a>
-            </li>
-            <li>
-              <a href="#">Монтаж печатных плат</a>
-            </li>
-            <li>
-              <a href="#">Комплектующие</a>
-            </li>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
+      <div class="main-footer__menu accordion" id="accordion">
+        <div class="main-footer__sections accordion__item accordion_no-js"> <!-- accordion__item-show -->
+          <div class="accordion__item-header">
+            <h3>Разделы сайта</h3>
+          </div>
+          <div class="main-footer__sections-wrapper accordion__content ">
+            <div class="main-footer__sections-items">
+              <ul class="main-footer__sections-items-left">
+                <li>
+                  <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Продукты</a>
+                </li>
+                <li>
+                  <a href="#">Производство печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+              </ul>
+              <ul class="main-footer__sections-items-right">
+                <li>
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="main-footer__contacts">
-          <h3>Наш офис</h3>
-          <ul>
-            <li><a href="https://yandex.ru/maps/-/CCUeAGE6SD" target="_blank">г. Мытищи, Олимпийский проспект, д.10</a>
-            </li>
-            <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
-            <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
-            <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
-          </ul>
+        <div class="main-footer__contacts accordion__item accordion_no-js">
+          <div class="accordion__item-header">
+            <h3>Наш офис</h3>
+          </div>
+          <div class="main-footer__contacts-wrapper accordion__content ">
+            <ul class="main-footer__contacts-items">
+              <li><a href="https://yandex.ru/maps/-/CCUeAGE6SD" target="_blank">г. Мытищи, Олимпийский проспект,
+                  д.10</a>
+              </li>
+              <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+              <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+              <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    <section>
-      <div>
+    <section class="down-footer">
+      <h2 class="visually-hidden">низ подвала</h2>
+      <div class="down-footer__wrapper">
         <a href="#">Все права защищены</a>
+        <a class="down-footer__wrapper-special" href="#">1999-2018 SD Service Devices</a>
         <a href="#">Условия конфиденциальности</a>
         <a href="#">Developed by wow studio </a>
       </div>

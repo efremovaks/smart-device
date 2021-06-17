@@ -1,0 +1,42 @@
+@media (max-width: $mobile-breakpoint) {
+  .accordion__item-header {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .accordion__item .accordion__item-header {
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 20px;
+      width: 16px;
+      height: 1px;
+      background: #c4c4c4;
+      transform: rotate(0);
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  .accordion__item.accordion__item-show .accordion__item-header {
+    &::before {
+      transform: rotate(0);
+    }
+  }
+
+  .accordion__content {
+    display: none;
+  }
+
+  .accordion__item-show .accordion__content {
+    display: block;
+  }
+
+  .accordion_no-js {
+    display: block;
+  }
+}
