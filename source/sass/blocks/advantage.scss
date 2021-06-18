@@ -1,0 +1,174 @@
+.advantage {
+  padding-top: 112px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 54px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 37px;
+  }
+}
+
+.advantage__wrapper {
+  max-width: 100%;
+  width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding-left: 10px;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    width: 900px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 718px;
+    grid-gap: 28px;
+    padding-left: 0;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 320px;
+    padding-left: 13px;
+  }
+}
+
+.advantage__items {
+  position: relative;
+  width: 570px;
+  height: 299px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #00b2ff;
+  }
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    width: 430px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 345px;
+    height: auto;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 291px;
+  }
+}
+
+.advantage__items svg {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  top: 39px;
+  left: 37px;
+  fill: #00b2ff;
+
+  @media (max-width: $tablet-breakpoint) {
+    top: 23px;
+    left: 23px;
+  }
+}
+
+.advantage__items:hover svg {
+  fill: #ffffff;
+}
+
+.advantage__items h2 {
+  font-family: $main-header-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00b2ff;
+  margin: 0;
+  padding-top: 94px;
+  padding-left: 40px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 65px;
+    padding-left: 25px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 20px;
+    line-height: 140.62%;
+    padding-top: 70px;
+  }
+}
+
+.advantage__items p {
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  margin: 0;
+  padding-top: 17px;
+  padding-left: 40px;
+  width: 529px;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    width: 390px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 320px;
+    padding-top: 9px;
+    padding-left: 25px;
+    padding-bottom: 23px;
+  }
+  @media (max-width: $mobile-breakpoint) {
+    width: 270px;
+  }
+}
+
+.advantage__items:hover h2,
+.advantage__items:hover p {
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .advantage__items--detective,
+  .advantage__items--tag {
+    height: 232px;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .advantage__items--hired,
+  .advantage__items--stopwatch {
+    height: 310px;
+  }
+
+  .advantage__items--detective {
+    height: 232px;
+  }
+
+  .advantage__items--tag {
+    height: 244px;
+  }
+  .advantage__items--hired p {
+    width: 275px;
+    padding-top: 8px;
+  }
+
+  .advantage__items--detective h2 {
+    padding-top: 62px;
+    padding-bottom: 8px;
+  }
+
+  .advantage__items--tag p {
+    padding-top: 14px;
+  }
+}
