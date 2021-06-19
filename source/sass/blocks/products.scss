@@ -1,0 +1,212 @@
+.products {
+  min-height: 938px;
+  background: #1b2d37;
+  width: 100%;
+  margin-top: 109px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-top: 84px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-top: 66px;
+  }
+}
+
+.products__wrapper {
+  width: 1152px;
+  margin: 0 auto;
+  padding-top: 89px;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    width: 1004px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 740px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 320px;
+    padding-bottom: 65px;
+  }
+}
+
+.products h2 {
+  font-family: $main-header-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white-text-color;
+  margin: 0;
+  padding-bottom: 50px;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 32px;
+    line-height: 140.62%;
+    width: 643px;
+    padding-left: 12px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 28px;
+    width: 310px;
+    padding-left: 25px;
+    padding-bottom: 40px;
+  }
+}
+
+.products__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    grid-gap: 15px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    row-gap: 46px;
+    justify-items: center;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    row-gap: 30px;
+  }
+}
+
+.products__items-production,
+.products__items-installation,
+.products__items-accessories {
+  position: relative;
+}
+
+.products__items-production a {
+  background-image: url("../img/production-desk.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.5;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    background-position: 74% 50%;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../img/production-tablet.jpg");
+    background-position: 45% 50%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../img/production-mobile.jpg");
+  }
+}
+
+.products__items-installation a {
+  background-image: url("../img/installation-desk.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.5;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    background-position: 53% 50%;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../img/installation-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../img/installation-mobile.jpg");
+  }
+}
+
+.products__items-accessories a {
+  background-image: url("../img/accessories-desk.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.5;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    background-position: 57% 50%;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../img/accessories-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../img/accessories-mobile.jpg");
+  }
+}
+
+.products__items p {
+  position: absolute;
+  top: 51px;
+  left: 43px;
+  width: 170px;
+  font-family: $main-header-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white-text-color;
+  margin: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    top: 40px;
+    left: 45px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    top: 21px;
+    left: 34px;
+  }
+}
+
+.products__items-accessories p {
+  @media (max-width: $tablet-breakpoint) {
+    top: 51px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    top: 31px;
+  }
+}
+
+.products__items a {
+  display: block;
+  width: 370px;
+  height: 620px;
+  background-color: #666666;
+  border: 1px solid #1b2d37;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    width: 330px;
+    height: 620px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 720px;
+    height: 256px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 290px;
+    height: 256px;
+  }
+
+  &:hover {
+    border-color: #00b2ff;
+    opacity: 1;
+  }
+
+  &:active {
+    border-color: #1b2d37;
+    opacity: 0.5;
+  }
+}

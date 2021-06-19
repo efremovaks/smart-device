@@ -1,7 +1,6 @@
 .about {
   max-width: 100%;
   padding-top: 105px;
-  padding-left: 377px;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
     padding-left: 0;
@@ -21,6 +20,7 @@
   position: relative;
   width: 1170px;
   margin: 0 auto;
+  padding-left: 188px;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
     width: 900px;
@@ -43,7 +43,7 @@
     width: 220px;
     height: 317px;
     top: 5px;
-    left: -209px;
+    left: -22px;
     background-image: url("../img/2005.png");
     background-repeat: no-repeat;
 
