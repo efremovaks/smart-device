@@ -53,6 +53,10 @@ modalForm.addEventListener('submit', function (evt) {
   }
 });
 
+formTel.addEventListener('focus', function (evt) {
+  evt.target.formTel.textContent = '(+7'
+});
+
 
 // АККОРДЕОН
 

@@ -4,6 +4,8 @@
   margin-bottom: 12px;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    display: grid;
+    grid-template-columns: 30% 70%;
     width: 1004px;
     margin: 0 auto;
     padding-left: 20px;
@@ -12,7 +14,7 @@
   @media (max-width: $tablet-breakpoint) {
     flex-wrap: wrap;
     margin-left: 0;
-    margin-bottom: 36px;
+    margin-bottom: 0;
   }
 }
 
@@ -140,20 +142,6 @@
   }
 }
 
-// .main-footer__sections-header {
-//   position: relative;
-
-//   &::before {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     content: "";
-//     width: 10px;
-//     height: 10px;
-//     background: chocolate;
-//   }
-// }
-
 .main-footer__sections-wrapper {
   margin-right: 0;
 
@@ -243,6 +231,8 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
+    padding-bottom: 30px;
+
     &:first-child {
       width: 270px;
     }

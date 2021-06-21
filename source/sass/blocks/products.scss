@@ -65,7 +65,8 @@
   grid-gap: 30px;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
-    grid-gap: 15px;
+    grid-gap: 10px;
+    justify-items: center;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -93,7 +94,7 @@
   opacity: 0.5;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
-    background-position: 74% 50%;
+    background-position: 81% 50%;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -113,7 +114,7 @@
   opacity: 0.5;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
-    background-position: 53% 50%;
+    background-position: 55% 50%;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -132,7 +133,7 @@
   opacity: 0.5;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
-    background-position: 57% 50%;
+    background-position: 61% 50%;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -186,7 +187,7 @@
   border: 1px solid #1b2d37;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
-    width: 330px;
+    width: 300px;
     height: 620px;
   }
 

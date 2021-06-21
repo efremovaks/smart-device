@@ -99,13 +99,13 @@
 .down-footer__wrapper-special {
   @media (max-width: $tablet-breakpoint) {
     position: absolute;
-    top: 17px;
+    top: 36px;
     left: 58%;
     transform: translate(-50%);
   }
 
   @media (max-width: $mobile-breakpoint) {
-    top: 78px;
+    top: 124px;
     left: 50%;
     width: 235px;
   }

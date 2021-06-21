@@ -1,6 +1,14 @@
 .page-footer {
-  margin-top: 50px;
+  padding-top: 65px;
   padding-bottom: 16px;
   position: relative;
   background-color: #fafafa;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 19px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 46px;
+  }
 }

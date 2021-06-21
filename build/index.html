@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -46,7 +46,7 @@
       <div class="promo__wrapper">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="promo__button" href="#">
+        <a class="promo__button" href="#feedback">
           <span class="promo__button-desk">Получить бесплатную консультацию</span>
           <span class="promo__button-mobile">Бесплатная консультация</span>
         </a>
@@ -125,11 +125,34 @@
             <a href="#"></a>
           </div>
         </div>
-
       </div>
-
     </section>
-
+    <section class="feedback" id="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__wrapper-form">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="feedback-name">
+              <input id="feedback-name" type="text" name="Name" placeholder="Имя" title="только буквы" pattern="^[a-zA-Z-А-Яа-яЁё\s]+$" required="">
+            </label>
+            <label for="feedback-tel">
+              <input id="feedback-tel" type="tel" name="Phone" placeholder="Телефон" title="только цифры" pattern="^[0-9]+$" maxlength="10" required="">
+            </label>
+            <label for="feedback-text">
+              <textarea id="feedback-text" name="Message" placeholder="Ваш вопрос"></textarea>
+            </label>
+            <button class="feedback__button" type="submit">Задать вопрос</button>
+            <p class="feedback__agree">
+              <input id="feedback-check" type="checkbox" title="нужно согласиться" checked="" required="">
+              <label for="feedback-check">
+                Я согласен на обработку персональных данных
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <section class="main-footer">
@@ -154,7 +177,7 @@
         </ul>
       </div>
       <div class="main-footer__menu accordion" id="accordion">
-        <div class="main-footer__sections accordion__item accordion_no-js">
+        <div class="main-footer__sections accordion__item accordion__no-js">
           <!-- accordion__item-show -->
           <div class="accordion__item-header">
             <h3>Разделы сайта</h3>
@@ -189,7 +212,7 @@
             </div>
           </div>
         </div>
-        <div class="main-footer__contacts accordion__item accordion_no-js">
+        <div class="main-footer__contacts accordion__item accordion__no-js">
           <div class="accordion__item-header">
             <h3>Наш офис</h3>
           </div>
