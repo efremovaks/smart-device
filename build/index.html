@@ -7,6 +7,9 @@
   <meta name="description" content="Smart Device">
   <title>Smart Device</title>
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="js/script.js" as="script">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -137,7 +140,7 @@
               <input id="feedback-name" type="text" name="Name" placeholder="Имя" title="только буквы" pattern="^[a-zA-Z-А-Яа-яЁё\s]+$" required="">
             </label>
             <label for="feedback-tel">
-              <input id="feedback-tel" type="tel" name="Phone" placeholder="Телефон" title="только цифры" pattern="^[0-9]+$" maxlength="10" required="">
+              <input id="feedback-tel" type="tel" name="Phone" placeholder="Телефон" title="только цифры" pattern="^[0-9]+$" maxlength="15" required="">
             </label>
             <label for="feedback-text">
               <textarea id="feedback-text" name="Message" placeholder="Ваш вопрос"></textarea>
@@ -251,7 +254,7 @@
             <input id="modal-name" type="text" name="Name" placeholder="Имя" title="только буквы" pattern="^[a-zA-Z-А-Яа-яЁё\s]+$" required="">
           </label>
           <label for="modal-tel">
-            <input id="modal-tel" type="tel" name="Phone" placeholder="Телефон" title="только цифры" pattern="^[0-9]+$" required="">
+            <input id="modal-tel" type="tel" name="Phone" placeholder="Телефон" title="только цифры" pattern="^[0-9]+$" maxlength="15" required="">
           </label>
           <label for="modal-text">
             <textarea id="modal-text" name="Message" placeholder="Ваш вопрос"></textarea>
