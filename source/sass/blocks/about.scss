@@ -33,7 +33,7 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    width: 300px;
+    width: 290px;
     padding-left: 0;
   }
 
@@ -84,7 +84,6 @@
 
   @media (max-width: $mobile-breakpoint) {
     font-size: 28px;
-    padding-left: 4px;
     padding-bottom: 24px;
   }
 }
@@ -99,31 +98,17 @@
   @media (max-width: $tablet-breakpoint) {
     width: 530px;
     position: relative;
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 2px;
-      height: 2px;
-      bottom: 26px;
-      right: 2px;
-      background: #666666;
-    }
-
-    &::after {
-      right: 12px;
-    }
   }
 
   @media (max-width: $mobile-breakpoint) {
     width: 100%;
-    padding-left: 7px;
+    padding-bottom: 30px;
 
     &::before {
       bottom: 44px;
       right: 143px;
     }
+
     &::after {
       bottom: 44px;
       right: 152px;
@@ -141,14 +126,25 @@
   margin: 0;
   padding-bottom: 20px;
 
-  @media (max-width: $mobile-breakpoint) {
-    padding-bottom: 38px;
-  }
-}
-
-.about__text-invisible {
   @media (max-width: $tablet-breakpoint) {
-    display: none;
+    overflow: hidden;
+    height: 92px;
+    margin-bottom: 16px;
+    /* stylelint-disable */
+    display: -webkit-box;
+    /* stylelint-enable */
+    -webkit-line-clamp: 4;
+    /* stylelint-disable */
+    -webkit-box-orient: vertical;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: -8px;
+    overflow: hidden;
+    height: 177px;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -164,8 +160,8 @@
   text-transform: uppercase;
   color: #00b2ff;
   width: 180px;
-  height: 45px;
   padding-top: 14px;
+  padding-bottom: 12px;
   margin-top: 20px;
   background: transparent;
   border: 1px solid #00b2ff;
@@ -179,8 +175,11 @@
     opacity: 1;
   }
 
+  @media (max-width: $tablet-breakpoint) {
+    margin-top: 37px;
+  }
+
   @media (max-width: $mobile-breakpoint) {
-    margin-top: -9px;
-    margin-left: 6px;
+    margin-top: 7px;
   }
 }

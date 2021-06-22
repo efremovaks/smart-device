@@ -9,8 +9,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      right: 20px;
+      top: 7px;
+      right: 18px;
       width: 16px;
       height: 1px;
       background: #c4c4c4;
@@ -36,7 +36,7 @@
     display: block;
   }
 
-  .accordion_no-js {
+  .accordion__no-js {
     display: block;
   }
 }

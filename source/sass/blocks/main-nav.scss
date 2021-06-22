@@ -32,7 +32,7 @@
   }
 
   @media (max-width: $tablet-breakpoint) {
-    padding-left: 16px;
+    padding-left: 10px;
   }
 
   &:hover {
@@ -116,12 +116,13 @@
   }
 }
 
-.main-nav-items img {
+.main-nav-items svg {
   display: inline;
-  width: auto;
+  vertical-align: baseline;
 
   @media (max-width: $tablet-breakpoint) {
     width: 25px;
+    height: 25px;
   }
 }
 

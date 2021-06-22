@@ -129,8 +129,8 @@
   background-color: #00b2ff;
   border-radius: 5px;
   width: 407px;
-  height: 55px;
   padding-top: 17px;
+  padding-bottom: 18px;
   margin-left: 100px;
 
   &:hover {
@@ -181,6 +181,7 @@
   opacity: 0.5;
   transform: rotate(-90deg);
   display: inline-block;
+  vertical-align: baseline;
 
   &:hover {
     opacity: 1;
