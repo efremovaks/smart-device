@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@jsjson/jsoncat": "^0.6.3",
-    "del": "^4.1.1"
+    "del": "^4.1.1",
+    "imagemin-jpegtran": "^7.0.0"
   }
 }
