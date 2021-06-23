@@ -93,6 +93,11 @@
   background-position: 50% 50%;
   opacity: 0.5;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/production-desk@2x.jpg");
+    background-size: 138%;
+  }
+
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
     background-position: 81% 50%;
   }
@@ -100,10 +105,20 @@
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../img/production-tablet.jpg");
     background-position: 45% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/production-tablet@2x.jpg");
+      background-size: 107%;
+    }
   }
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/production-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/production-mobile@2x.jpg");
+      background-size: 110%;
+    }
   }
 }
 
@@ -113,16 +128,31 @@
   background-position: 50% 50%;
   opacity: 0.5;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/installation-desk@2x.jpg");
+    background-size: 340%;
+  }
+
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
     background-position: 55% 50%;
   }
 
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../img/installation-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/installation-tablet@2x.jpg");
+      background-size: 107%;
+    }
   }
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/installation-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/installation-mobile@2x.jpg");
+      background-size: 110%;
+    }
   }
 }
 
@@ -132,16 +162,31 @@
   background-position: 50% 50%;
   opacity: 0.5;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/accessories-desk@2x.jpg");
+    background-size: 207%;
+  }
+
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
     background-position: 61% 50%;
   }
 
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../img/accessories-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/accessories-tablet@2x.jpg");
+      background-size: 107%;
+    }
   }
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/accessories-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/accessories-mobile@2x.jpg");
+      background-size: 110%;
+    }
   }
 }
 

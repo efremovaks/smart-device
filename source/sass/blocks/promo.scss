@@ -5,17 +5,28 @@
   background-position: 50% 50%;
   width: 100%;
   min-height: 878px;
-  // position: absolute;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-back-desk@2x.jpg");
+  }
 
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../img/promo-back-tablet.jpg");
     background-size: cover;
     min-height: 686px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-back-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/promo-back-mobile.jpg");
     min-height: 647px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-back-mobile@2x.jpg");
+    }
   }
 }
 
