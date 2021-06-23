@@ -13,6 +13,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var jsonConcat = require('gulp-json-concat');
+var concat = require('gulp-concat');
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
@@ -91,8 +92,8 @@ gulp.task("html", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/**")
-    .pipe(jsonConcat("script.js"))
+  return gulp.src("source/js/*.js")
+    .pipe(jsonConcat("source/js/script.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });
