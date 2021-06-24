@@ -24,7 +24,7 @@
 .modal__box {
   position: relative;
   width: 490px;
-  height: 605px;
+  min-height: 605px;
   margin: 0 auto;
   margin-top: 8%;
   padding-left: 41px;
@@ -146,7 +146,6 @@
 
 .modal__button {
   width: 411px;
-  height: 46px;
   background: #00b2ff;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -159,6 +158,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-top: 14px;
+  padding-bottom: 14px;
   margin-top: -9px;
   margin-bottom: 35px;
   cursor: pointer;
