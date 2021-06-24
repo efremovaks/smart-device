@@ -40,7 +40,7 @@
 .advantage__items {
   position: relative;
   width: 570px;
-  height: 299px;
+  min-height: 299px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
@@ -142,22 +142,22 @@
 @media (max-width: $tablet-breakpoint) {
   .advantage__items--detective,
   .advantage__items--tag {
-    height: 232px;
+    min-height: 232px;
   }
 }
 
 @media (max-width: $mobile-breakpoint) {
   .advantage__items--hired,
   .advantage__items--stopwatch {
-    height: 310px;
+    min-height: 310px;
   }
 
   .advantage__items--detective {
-    height: 232px;
+    min-height: 232px;
   }
 
   .advantage__items--tag {
-    height: 244px;
+    min-height: 244px;
   }
 
   .advantage__items--hired p {

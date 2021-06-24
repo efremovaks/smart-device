@@ -4,27 +4,30 @@
 // АККОРДЕОН
 
 var accordion = document.getElementById('accordion');
-var accordionItems = accordion.querySelectorAll('.accordion__item-header');
-var accordionContent = accordion.querySelectorAll('.accordion__item');
+var accordionItems = accordion.querySelectorAll('.accordion__item');
 
 
-for (var c = 0; c < accordionContent.length; c++) {
-  if (accordionContent[c].classList.contains('accordion__no-js')) {
-    accordionContent[c].classList.remove('accordion__no-js');
+accordionItems.forEach(function (item) {
+  if (item.classList.contains('accordion__no-js')) {
+    item.classList.remove('accordion__no-js');
   }
-}
+});
 
-for (var a = 0; a < accordionItems.length; a++) {
-  accordionItems[a].addEventListener('click', function () {
-    accordionContent.forEach(function (element) {
-      if (element) {
-        element.classList.add('accordion__item-show');
-      } else {
-        element.classList.remove('accordion__item-show');
-      }
-    });
+
+var closeItems = function () {
+  accordionItems.forEach(function (item) {
+    item.classList.remove('accordion__item-show');
   });
-}
+};
+
+accordionItems.forEach(function (item) {
+  item.addEventListener('click', function () {
+    if (item) {
+      closeItems();
+      item.classList.add('accordion__item-show');
+    }
+  });
+});
 
 'use strict';
 
@@ -123,14 +126,14 @@ if (btnCall) {
   });
 }
 
-
-modalClose.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modal.classList.remove('modal__show');
-  body.style.overflow = 'auto';
-  body.style.padding = ('0');
-});
-
+if (modalClose) {
+  modalClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.remove('modal__show');
+    body.style.overflow = 'auto';
+    body.style.padding = ('0');
+  });
+}
 
 document.addEventListener('click', function (evt) {
   var wrap = evt.target.classList.contains('modal__wrapper');
@@ -144,7 +147,6 @@ document.addEventListener('click', function (evt) {
   body.style.padding = ('0');
 });
 
-
 window.addEventListener('keydown', function (evt) {
   if (evt.key === 'Escape' || evt.key === 'Esc') {
     if (modal.classList.contains('modal__show')) {
@@ -156,12 +158,13 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-modalForm.addEventListener('submit', function (evt) {
-  if (!formName.value || !formTel.value || !formText.value) {
-    evt.preventDefault();
-  } else {
-    localStorage.setItem('login', formName.value);
-    localStorage.setItem('login', formTel.value);
-  }
-});
-
+if (modalForm) {
+  modalForm.addEventListener('submit', function (evt) {
+    if (!formName.value || !formTel.value || !formText.value) {
+      evt.preventDefault();
+    } else {
+      localStorage.setItem('login', formName.value);
+      localStorage.setItem('login', formTel.value);
+    }
+  });
+}

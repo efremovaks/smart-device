@@ -28,15 +28,15 @@
     }
   }
 
-  .accordion__content {
-    display: none;
-  }
-
-  .accordion__item-show .accordion__content {
-    display: block;
-  }
-
   .accordion__no-js {
     display: block;
   }
+}
+
+.accordion__content {
+  display: none;
+}
+
+.accordion__item-show .accordion__content {
+  display: block;
 }

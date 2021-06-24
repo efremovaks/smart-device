@@ -36,14 +36,14 @@ if (btnCall) {
   });
 }
 
-
-modalClose.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modal.classList.remove('modal__show');
-  body.style.overflow = 'auto';
-  body.style.padding = ('0');
-});
-
+if (modalClose) {
+  modalClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.remove('modal__show');
+    body.style.overflow = 'auto';
+    body.style.padding = ('0');
+  });
+}
 
 document.addEventListener('click', function (evt) {
   var wrap = evt.target.classList.contains('modal__wrapper');
@@ -57,7 +57,6 @@ document.addEventListener('click', function (evt) {
   body.style.padding = ('0');
 });
 
-
 window.addEventListener('keydown', function (evt) {
   if (evt.key === 'Escape' || evt.key === 'Esc') {
     if (modal.classList.contains('modal__show')) {
@@ -69,11 +68,13 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-modalForm.addEventListener('submit', function (evt) {
-  if (!formName.value || !formTel.value || !formText.value) {
-    evt.preventDefault();
-  } else {
-    localStorage.setItem('login', formName.value);
-    localStorage.setItem('login', formTel.value);
-  }
-});
+if (modalForm) {
+  modalForm.addEventListener('submit', function (evt) {
+    if (!formName.value || !formTel.value || !formText.value) {
+      evt.preventDefault();
+    } else {
+      localStorage.setItem('login', formName.value);
+      localStorage.setItem('login', formTel.value);
+    }
+  });
+}

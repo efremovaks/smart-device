@@ -4,6 +4,7 @@
   margin-right: 12.5%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
     width: 1004px;
@@ -146,8 +147,8 @@
   text-transform: uppercase;
   color: $white-text-color;
   width: 180px;
-  height: 45px;
   padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 0;
   background: transparent;
   border: 1px solid #ffffff;
