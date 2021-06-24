@@ -14,17 +14,20 @@ accordionItems.forEach(function (item) {
 });
 
 
-var closeItems = function () {
-  accordionItems.forEach(function (item) {
+var closeOtherItems = function (currentIndex) {
+  accordionItems.forEach(function (item, index) {
+    if (index === currentIndex) {
+      return;
+    }
     item.classList.remove('accordion__item-show');
   });
 };
 
-accordionItems.forEach(function (item) {
+accordionItems.forEach(function (item, index) {
   item.addEventListener('click', function () {
     if (item) {
-      closeItems();
-      item.classList.add('accordion__item-show');
+      closeOtherItems(index);
+      item.classList.toggle('accordion__item-show');
     }
   });
 });
