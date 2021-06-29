@@ -9,8 +9,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 7px;
-      right: 18px;
+      top: 35px;
+      right: 48px;
       width: 16px;
       height: 1px;
       background: #c4c4c4;
@@ -28,15 +28,22 @@
     }
   }
 
-  .accordion__no-js {
+  .accordion__content {
+    display: none;
+  }
+
+  .accordion__item-show .accordion__content {
     display: block;
   }
 }
 
-.accordion__content {
-  display: none;
+.accordion__no-js .accordion__content {
+  display: block;
 }
 
-.accordion__item-show .accordion__content {
-  display: block;
+.accordion__no-js .accordion__item-header {
+  &::after,
+  &::before {
+    display: none;
+  }
 }

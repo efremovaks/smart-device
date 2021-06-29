@@ -25,7 +25,7 @@ if (btnCall) {
     evt.preventDefault();
     modal.classList.add('modal__show');
     body.style.overflow = ('hidden');
-    body.style.padding = ('0 18px 0 0');
+    body.style.padding = ('0 17px 0 0');
 
     if (storage) {
       formName.value = storage;

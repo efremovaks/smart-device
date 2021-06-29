@@ -7,7 +7,8 @@
   min-height: 670px;
 
   @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
-    background-position: 23% 26%;
+    background-position: 100% 64%;
+    background-size: contain;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -35,10 +36,12 @@
 
   @media (max-width: $mobile-breakpoint) {
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
-.feedback__wrapper-form {
+.feedback__wrapper-header {
   display: flex;
   flex-wrap: wrap;
   width: 600px;
@@ -54,9 +57,8 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    width: 300px;
-    margin: 0 auto;
-    padding-left: 4px;
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -107,9 +109,22 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  width: 600px;
+  margin-left: 605px;
+
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    margin-left: auto;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-left: 57px;
+    width: 630px;
+  }
 
   @media (max-width: $mobile-breakpoint) {
-    width: 300px;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 23px;
   }
 }
 
@@ -141,10 +156,12 @@
 
   @media (max-width: $tablet-breakpoint) {
     width: 278px;
+    padding-left: 16px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    width: 290px;
+    min-width: 290px;
+    width: auto;
     padding-left: 16px;
   }
 
@@ -154,6 +171,10 @@
 
   &:active {
     border-color: #00b2ff;
+  }
+
+  &:focus {
+    border-color: #ffffff;
   }
 }
 
@@ -208,7 +229,7 @@
   padding-bottom: 14px;
 
   @media (max-width: $tablet-breakpoint) {
-    margin-top: 7px;
+    margin-top: 4px;
     width: 279px;
   }
 
@@ -241,10 +262,14 @@
   padding-top: 12px;
   cursor: pointer;
   width: 270px;
-}
 
-.feedback__agree input {
-  display: none;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .feedback__agree input + label::before {
@@ -267,4 +292,8 @@
   height: 20px;
   background-image: url("../img/agree-check.png");
   background-repeat: no-repeat;
+}
+
+.feedback__agree input:focus + label::before {
+  outline: 1px solid #ffffff;
 }

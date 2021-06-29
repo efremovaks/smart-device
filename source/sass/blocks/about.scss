@@ -13,6 +13,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     padding-left: 0;
+    padding-top: 66px;
   }
 }
 
@@ -33,8 +34,10 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    width: 290px;
-    padding-left: 0;
+    width: 100%;
+    min-width: 299px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   &::before {

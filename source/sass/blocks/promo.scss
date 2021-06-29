@@ -8,11 +8,12 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-back-desk@2x.jpg");
+    background-size: 100% 100%;
   }
 
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../img/promo-back-tablet.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     min-height: 686px;
 
     @media (min-resolution: 2dppx) {
