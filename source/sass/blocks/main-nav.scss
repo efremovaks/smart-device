@@ -52,6 +52,10 @@
   flex-wrap: wrap;
   min-width: 470px;
 
+  @media (min-width: $desktop-breakpoint) and (max-width: 1423px) {
+    width: 580px;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     min-width: 83px;
     padding-right: 8px;

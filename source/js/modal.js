@@ -70,7 +70,7 @@ window.addEventListener('keydown', function (evt) {
 
 if (modalForm) {
   modalForm.addEventListener('submit', function (evt) {
-    if (!formName.value || !formTel.value || !formText.value) {
+    if (!formName.value || !formTel.value) {
       evt.preventDefault();
     } else {
       localStorage.setItem('login', formName.value);

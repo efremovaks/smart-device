@@ -8,16 +8,16 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-back-desk@2x.jpg");
-    background-size: 100% 100%;
+    background-size: 1920px;
   }
 
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../img/promo-back-tablet.jpg");
-    background-size: 100% 100%;
     min-height: 686px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-back-tablet@2x.jpg");
+      background-size: 768px;
     }
   }
 
@@ -27,6 +27,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-back-mobile@2x.jpg");
+      background-size: 320px;
     }
   }
 }

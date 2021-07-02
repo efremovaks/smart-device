@@ -18,7 +18,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="main-nav">
-        <a href="#" class="main-nav__logo">
+        <a class="main-nav__logo">
           <svg class="main-nav__logo-desk" width="202" height="52">
             <use xlink:href="img/sprite.svg#logo" />
           </svg>
@@ -151,8 +151,7 @@
           </label>
           <button class="feedback__button" type="submit">Задать вопрос</button>
           <p class="feedback__agree">
-            <input class="visually-hidden" id="feedback-check" type="checkbox" title="нужно согласиться" checked
-              required>
+            <input class="visually-hidden" id="feedback-check" type="checkbox" title="нужно согласиться" checked>
             <label for="feedback-check">
               Я согласен на обработку персональных данных
             </label>
@@ -260,7 +259,7 @@
   <section class="modal">
     <div class="modal__wrapper">
       <div class="modal__box">
-        <button class="modal__close" type="button" name="close"></button>
+        <button class="modal__close" type="button" name="close" tabindex="2"></button>
         <h2>Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form action="https://echo.htmlacademy.ru" method="POST">
@@ -277,7 +276,7 @@
           </label>
           <button class="modal__button" type="submit">Отправить</button>
           <p class="modal__agree">
-            <input class="visually-hidden" id="modal-check" type="checkbox" title="нужно согласиться" checked required>
+            <input class="visually-hidden" id="modal-check" type="checkbox" title="нужно согласиться" checked>
             <label for="modal-check">
               Я согласен на обработку персональных данных
             </label>
