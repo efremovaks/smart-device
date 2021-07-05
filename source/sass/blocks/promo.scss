@@ -14,20 +14,22 @@
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../img/promo-back-tablet.jpg");
     min-height: 686px;
+    background-size: 101% 687px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-back-tablet@2x.jpg");
-      background-size: 768px;
+      background-size: 101% 687px;
     }
   }
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/promo-back-mobile.jpg");
     min-height: 647px;
+    background-size: 100% 650px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-back-mobile@2x.jpg");
-      background-size: 320px;
+      background-size: 100% 650px;
     }
   }
 }
@@ -75,7 +77,8 @@
   @media (max-width: $mobile-breakpoint) {
     font-size: 40px;
     line-height: 47px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 }
 
@@ -118,7 +121,8 @@
   @media (max-width: $mobile-breakpoint) {
     font-size: 16px;
     line-height: 156.8%;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding-bottom: 42px;
 
     &::before {
@@ -160,8 +164,9 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    margin-left: 3px;
-    width: 287px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 287px;
     font-size: 16px;
     line-height: 19px;
   }

@@ -144,6 +144,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/production-mobile.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/production-mobile@2x.jpg");
@@ -178,6 +179,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/installation-mobile.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/installation-mobile@2x.jpg");
@@ -212,6 +214,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     background-image: url("../img/accessories-mobile.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/accessories-mobile@2x.jpg");

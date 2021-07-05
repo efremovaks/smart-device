@@ -101,7 +101,6 @@ var modalClose = modal.querySelector('.modal__close');
 var modalForm = modal.querySelector('form');
 var formName = modalForm.querySelector('input[name=Name]');
 var formTel = modalForm.querySelector('input[name=Phone]');
-var formText = modalForm.querySelector('textarea[name=Message]');
 
 // eslint-disable-next-line no-unused-vars
 var isStorageSupport = true;
