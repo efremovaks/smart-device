@@ -5,7 +5,8 @@
 
 .page-header__wrapper {
   position: absolute;
-  width: 1410px;
+  max-width: 1410px;
+  width: 100%;
   top: 33px;
   left: 50%;
   transform: translateX(-50%);
